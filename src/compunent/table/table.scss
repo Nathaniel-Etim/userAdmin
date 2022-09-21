@@ -1,4 +1,15 @@
 .table {
+  .payment {
+    @media screen and (max-width: 946px) {
+      display: none;
+    }
+  }
+
+  .date {
+    @media screen and (max-width: 946px) {
+      display: none;
+    }
+  }
   .cellWrapper {
     display: flex;
     align-items: center;
@@ -24,6 +35,10 @@
     &.pending {
       color: goldenrod;
       background-color: rgba(218, 165, 32, 0.309);
+    }
+
+    @media screen and (max-width: 946px) {
+      display: none;
     }
   }
 }

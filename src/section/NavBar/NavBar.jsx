@@ -1,5 +1,5 @@
 import React, { useContext } from "react";
-import classes from "./navbar.module.scss";
+import "./navbar.scss";
 import SearchIcon from "@mui/icons-material/Search";
 import LanguageIcon from "@mui/icons-material/Language";
 import DarkModeIcon from "@mui/icons-material/DarkMode";
@@ -17,44 +17,39 @@ const NavBar = () => {
   };
 
   return (
-    <div className={classes.navbar}>
-      <div className={classes.wrapper}>
-        <div className={classes.search}>
+    <div className="navbar">
+      <div className="wrapper">
+        <div className="search">
           <input type="text" placeholder="search" />
-          <SearchIcon></SearchIcon>
+          <SearchIcon classMame="searchIcon"></SearchIcon>
         </div>
-        <div className={classes.items}>
-          <div className={classes.item}>
-            <LanguageIcon className={classes.icon}> </LanguageIcon>
+        <div className="items">
+          <div className="item">
+            <LanguageIcon className="icon"> </LanguageIcon>
             English
           </div>
-          <div className={classes.item}>
-            <DarkModeIcon
-              className={classes.icon}
-              onClick={setMode}
-            ></DarkModeIcon>
+          <div className="item">
+            <DarkModeIcon className="icon" onClick={setMode}></DarkModeIcon>
           </div>
-          <div className={classes.item}>
-            <FullscreenExitIcon className={classes.icon}> </FullscreenExitIcon>
+          <div className="item">
+            <FullscreenExitIcon className="icon"> </FullscreenExitIcon>
           </div>
-          <div className={classes.item}>
-            <NotificationsNoneIcon
-              className={classes.icon}
-            ></NotificationsNoneIcon>
-            <div className={classes.counter}> 1</div>
+          <div className="item">
+            <NotificationsNoneIcon className="icon"></NotificationsNoneIcon>
+            <div className="counter"> 1</div>
           </div>
-          <div className={classes.item}>
-            <ChatBubbleIcon className={classes.icon}></ChatBubbleIcon>
-            <div className={classes.counter}> 10 </div>
+          <div className="item">
+            <ChatBubbleIcon className="icon"></ChatBubbleIcon>
+            <div className="counter"> 10 </div>
           </div>
-          <div className={classes.item}>
-            <ListIcon className={classes.icon}></ListIcon>
+          <div className="item">
+            <ListIcon className="icon"></ListIcon>
           </div>
-          <div className={classes.item}>
+          <div className="items">
             <img
               src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT3WEmfJCME77ZGymWrlJkXRv5bWg9QQmQEzw&usqp=CAU"
               alt=""
-              className={classes.avatar}
+              className="avatar"
             />
           </div>
         </div>

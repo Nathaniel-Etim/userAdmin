@@ -8,7 +8,7 @@ import TableHead from "@mui/material/TableHead";
 import TableRow from "@mui/material/TableRow";
 import Paper from "@mui/material/Paper";
 
-const TableList = () => {
+const TableList = ({ aspect }) => {
   const rows = [
     {
       id: 54345,
@@ -74,16 +74,16 @@ const TableList = () => {
   ];
 
   return (
-    <TableContainer component={Paper} className="table">
+    <TableContainer component={Paper} className="table" aspect={aspect}>
       <Table sx={{ minWidth: 650 }} aria-label="simple table">
         <TableHead>
           <TableRow>
             <TableCell className="tabelCell">Traking ID</TableCell>
-            <TableCell className="tabelCell">Products</TableCell>
+            <TableCell className="tabelCell product">Products</TableCell>
             <TableCell className="tabelCell">Customer </TableCell>
-            <TableCell className="tabelCell">Date</TableCell>
+            <TableCell className="tabelCell date">Date</TableCell>
             <TableCell className="tabelCell">Amount</TableCell>
-            <TableCell className="tabelCell">Payment method</TableCell>
+            <TableCell className="tabelCell payment">Payment method</TableCell>
           </TableRow>
         </TableHead>
         <TableBody>
@@ -97,7 +97,7 @@ const TableList = () => {
                 </div>
               </TableCell>
               <TableCell className="tabelCell">{row.customer}</TableCell>
-              <TableCell className="tabelCell">{row.date}</TableCell>
+              <TableCell className="tabelCell date">{row.date}</TableCell>
               <TableCell className="tabelCell">{row.amount}</TableCell>
               <TableCell className="tabelCell">
                 <span className={`status ${row.status}`}>{row.status}</span>

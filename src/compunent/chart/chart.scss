@@ -12,4 +12,9 @@
   .chatGrid {
     stroke: rgba(247, 241, 241, 0.74);
   }
+
+  @media screen and (max-width: 592px) {
+    display: none;
+    width: 16rem;
+  }
 }

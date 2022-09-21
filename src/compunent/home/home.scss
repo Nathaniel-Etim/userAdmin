@@ -2,7 +2,12 @@
   display: flex;
 
   .homecontainer {
-    flex: 6;
+    flex: 5;
+    width: 80%;
+
+    @media screen and (max-width: 592px) {
+      width: 16rem;
+    }
   }
 
   .widgets,
@@ -12,14 +17,104 @@
     gap: 20px;
   }
 
+  .widgets {
+    @media screen and (max-width: 1093px) {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      // gap: 6;
+    }
+
+    @media screen and (max-width: 800px) {
+      grid-template-columns: 1fr 1fr;
+      // gap: 3rem;
+      // width: 30rem;
+      padding: 20px 0 20px 10px;
+    }
+
+    @media screen and (max-width: 654px) {
+      grid-template-columns: 1fr;
+      // width: 100%;
+    }
+
+    @media screen and (max-width: 362px) {
+      width: 100px;
+      background-color: red;
+    }
+  }
+
   .charts {
     padding: 5px 20px;
+    @media screen and (max-width: 1093px) {
+      display: inline-block;
+    }
+
+    @media screen and (max-width: 889px) {
+      width: 24rem;
+      // gap: 6;
+    }
+
+    @media screen and (max-width: 590px) {
+      width: 10rem;
+    }
+
+    @media screen and (max-width: 570px) {
+      width: 10rem;
+    }
   }
 
   .listContainer {
     box-shadow: 2px 4px 10px 1px rgb(191, 174, 174);
-    padding: 20px;
-    margin: 20px;
+    padding: 10px;
+    margin: 15px;
+    max-width: 95%;
+    border-radius: 5px;
+
+    @media screen and (max-width: 805px) {
+      max-width: 38rem;
+    }
+
+    @media screen and (max-width: 792px) {
+      max-width: 37rem;
+    }
+
+    @media screen and (max-width: 792px) {
+      max-width: 35rem;
+    }
+
+    @media screen and (max-width: 732px) {
+      max-width: 34rem;
+    }
+
+    @media screen and (max-width: 721px) {
+      width: 30rem;
+    }
+
+    @media screen and (max-width: 669px) {
+      width: 28rem;
+    }
+
+    @media screen and (max-width: 618px) {
+      width: 24rem;
+    }
+    @media screen and (max-width: 570px) {
+      width: 20rem;
+    }
+    @media screen and (max-width: 590px) {
+      width: 23rem;
+    }
+    @media screen and (max-width: 651px) {
+      width: 26rem;
+    }
+    @media screen and (max-width: 562px) {
+      width: 24rem;
+    }
+    @media screen and (max-width: 592px) {
+      display: none;
+      width: 16rem;
+    }
+    @media screen and (max-width: 592px) {
+      width: 16rem;
+    }
   }
 
   .listTitle {

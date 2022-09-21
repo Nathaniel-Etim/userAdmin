@@ -6,6 +6,16 @@
   font-size: 14px;
   color: #888;
 
+  @media screen and (max-width: 1093px) {
+    height: 100px;
+    max-width: max-content;
+  }
+
+  @media screen and (max-width: 592px) {
+    width: 16rem;
+    height: 50px;
+  }
+
   .wrapper {
     width: 100%;
     padding: 20px;
@@ -13,11 +23,16 @@
     align-items: center;
     justify-content: space-between;
 
+    @media screen and (max-width: 1093px) {
+      display: flex;
+      flex-direction: column;
+    }
+
     .search {
       display: flex;
       align-items: center;
       border-bottom: 0.5px solid rgb(222, 207, 207);
-      padding: 3px;
+      padding: 0.5rem;
 
       input {
         border: none;
@@ -33,6 +48,12 @@
     .items {
       display: flex;
 
+      @media screen and (max-width: 1093px) {
+        padding: 20px;
+      }
+      @media screen and (max-width: 440px) {
+        display: none;
+      }
       .item {
         display: flex;
         align-items: center;

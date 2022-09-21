@@ -29,7 +29,7 @@ const Home = (props) => {
         </div>
         <div className="listContainer">
           <div className="listTitle"> Latest transaction </div>
-          <TableList />
+          <TableList aspect={2 / 1} />
         </div>
       </div>
     </div>

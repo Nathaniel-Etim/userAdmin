@@ -7,6 +7,14 @@
   border-radius: 10px;
   height: 100px;
 
+  @media screen and (max-width: 1093px) {
+    max-width: 11rem;
+  }
+
+  @media screen and (max-width: 620px) {
+    width: 30rem;
+  }
+
   .left,
   .right {
     display: flex;

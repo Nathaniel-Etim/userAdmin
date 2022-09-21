@@ -1,6 +1,6 @@
 .single {
   display: flex;
-  width: 100%;
+  // width: 200px;
 
   .singleContainer {
     flex: 6;
@@ -8,13 +8,50 @@
     .top {
       padding: 20px;
       display: flex;
-      gap: 20px;
+
+      @media screen and (max-width: 1008px) {
+        display: inline-block;
+        justify-content: space-between;
+      }
+
+      @media screen and (max-width: 669px) {
+        width: 28rem;
+      }
+
+      @media screen and (max-width: 618px) {
+        width: 24rem;
+      }
+      @media screen and (max-width: 570px) {
+        width: 20rem;
+      }
+      @media screen and (max-width: 590px) {
+        width: 23rem;
+      }
+      @media screen and (max-width: 651px) {
+        width: 26rem;
+      }
+      @media screen and (max-width: 562px) {
+        width: 24rem;
+      }
+      @media screen and (max-width: 592px) {
+        // display: none;
+        padding: 5px 0 5px 5px;
+        gap: 7px;
+        margin: 0;
+
+        width: 15rem;
+      }
 
       .left {
         position: relative;
         flex: 1;
         box-shadow: 2px 4px 10px 1px rgb(191, 174, 174);
         padding: 20px;
+
+        @media screen and (max-width: 592px) {
+          width: 10.6rem;
+          // padding: 0;
+        }
 
         .editButton {
           position: absolute;
@@ -30,12 +67,20 @@
 
         .item {
           display: flex;
-          gap: 20px;
+
+          @media screen and (max-width: 592px) {
+            display: inline-block;
+            gap: 0;
+            width: 12rem;
+            // background-color: red;
+            padding: 0;
+          }
 
           .details {
             .itemTitle {
               margin-bottom: 10px;
               color: #555;
+              padding: 2px;
             }
 
             .detailItem {
@@ -60,6 +105,9 @@
           height: 100px;
           border-radius: 50%;
           object-fit: cover;
+          @media screen and (max-width: 592px) {
+            align-items: center;
+          }
         }
       }
 
@@ -72,6 +120,53 @@
       box-shadow: 2px 4px 10px 1px rgb(191, 174, 174);
       margin: 10px 20px;
       padding: 20px;
+
+      @media screen and (max-width: 805px) {
+        max-width: 38rem;
+      }
+
+      @media screen and (max-width: 792px) {
+        max-width: 37rem;
+      }
+
+      @media screen and (max-width: 792px) {
+        max-width: 35rem;
+      }
+
+      @media screen and (max-width: 732px) {
+        max-width: 34rem;
+      }
+
+      @media screen and (max-width: 721px) {
+        width: 30rem;
+      }
+
+      @media screen and (max-width: 669px) {
+        width: 28rem;
+      }
+
+      @media screen and (max-width: 618px) {
+        width: 24rem;
+      }
+      @media screen and (max-width: 570px) {
+        width: 20rem;
+      }
+      @media screen and (max-width: 590px) {
+        width: 23rem;
+      }
+      @media screen and (max-width: 651px) {
+        width: 26rem;
+      }
+      @media screen and (max-width: 562px) {
+        width: 24rem;
+      }
+      @media screen and (max-width: 592px) {
+        display: none;
+        width: 16rem;
+      }
+      @media screen and (max-width: 592px) {
+        width: 16rem;
+      }
     }
 
     .title {
