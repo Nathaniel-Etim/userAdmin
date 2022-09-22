@@ -49,7 +49,7 @@ const NavBar = () => {
             <img
               src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT3WEmfJCME77ZGymWrlJkXRv5bWg9QQmQEzw&usqp=CAU"
               alt=""
-              className="avatar"
+              className="profilePics"
             />
           </div>
         </div>
